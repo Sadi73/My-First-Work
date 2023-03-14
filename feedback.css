@@ -1,0 +1,29 @@
+body{
+	background: #e3e3e3;
+
+}
+
+.header{
+	height: 150px;
+    background: #035;
+  
+}
+
+.header p{
+	 font-size: 105px;
+    font-family: cursive;
+        color: #FED
+
+}
+
+.main{
+	width: 480px;
+	margin: auto;
+	
+
+}
+
+td{
+	font-size: 22px;
+	font-family: monospace;
+}

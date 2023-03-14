@@ -1,0 +1,28 @@
+body{
+	
+	margin: auto;
+	background: url(images/GiveHands-iStock-Blog-1280x620-1280x620.jpg) ;
+}
+
+.menu{
+     margin: 100 0 0 150;
+    width: 260px;
+    text-align: center;
+}
+
+.menu ul {
+	list-style: none;
+
+}
+.menu ul li {
+    border: 1px solid #FDE;
+    padding: 14px;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 25px;
+	
+}
+
+.menu ul li a{
+	text-decoration: none;
+}

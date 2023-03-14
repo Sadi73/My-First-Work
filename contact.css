@@ -1,0 +1,46 @@
+body{
+	
+	
+	background: #e3e3e3;
+}
+
+.header{
+	 height: 150px;
+    background: #035;
+}
+
+.header p{
+	    font-size: 105px;
+    font-family: cursive;
+        color: #FED
+
+}
+
+
+
+
+.address{
+	float: left;
+	margin-left: 100px;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+
+img{
+	width: 550px;
+	height: 400px;
+	margin-top: 30px;
+}
+
+#link{
+	margin-left: 400px;
+}
+.address tr td,h3,p{
+	font-family: monospace;
+	font-size: 30px;
+}
+
+p a{
+	text-decoration: none;
+	color: #1AF;
+}

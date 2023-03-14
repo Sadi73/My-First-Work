@@ -1,0 +1,125 @@
+<html>
+<link rel="stylesheet" href="feedback.css">
+<head>
+  <title>Feedback</title>
+</head>
+
+
+<body>
+  <div class="header">
+
+    <center>
+      <p>Feedback</p>
+    </center>
+
+  </div>
+
+
+  <div class="main">
+
+    <h2>If you like my page, please leave a feedback</h2>
+
+
+  <form name="myform" method="POST" onsubmit="return validateform();" >
+    <table>
+      <tr>
+        <td>Name:
+        </td>
+        <td><input type="text"  name="name" >
+        </td>
+
+      </tr>
+      <tr>
+        <td>Email:
+        </td>
+        <td><input type="text" name="email" >
+        </td>
+
+      </tr>
+      <tr>
+        <td>Comment:
+        </td>
+        <td><textarea rows="8" cols="30" name="comment"></textarea>
+        </td>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" name="submit"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <div id="state"></div>
+        </td>
+      </tr>
+    </table>
+  </form>
+ </div>
+ <hr>
+ <hr>
+
+ <center>
+  <div id="comment"></div>
+ </center>
+
+
+  <script type="text/javascript">
+           function showInput() {   
+            document.getElementById("state").innerHTML = 
+                '<h5>'+ name.value +'</h5>'+"    :: "+ comment.value;
+          }
+
+
+    function validateform(){
+      var name=document.myform.name;
+      var email=document.myform.email;
+      var comment=document.myform.comment;
+
+      if(name.value == ""){
+          document.getElementById("state").innerHTML = "Please Enter your name";
+          return false;
+        }
+
+      if(email.value == "" ){
+          document.getElementById("state").innerHTML = "Please Enter your email";
+          return false;
+        }
+
+        if(email.value.indexOf("@", 0) <0 ){
+          document.getElementById("state").innerHTML = "Please Enter a valid email address";
+          return false;
+        }
+
+          if(email.value.indexOf(".com", 0) <0 ){
+          document.getElementById("state").innerHTML = "Please Enter a valid email address";
+          return false;
+        }
+
+        if(comment.value == ""){
+          document.getElementById("state").innerHTML = "Please Put your comment";
+          return false;
+          
+        }
+
+    
+
+
+       if(name.value != ""){
+        if(email.value != ""){
+          if(comment.value != ""){
+            document.getElementById("comment").innerHTML = name.value+": "+comment.value;
+                 return false;
+
+          }
+        }
+       }
+ 
+    }
+
+    
+
+
+  </script>
+</body>
+</html>
